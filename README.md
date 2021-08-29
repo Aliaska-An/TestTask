@@ -7,7 +7,9 @@ curl -F upload=@/Users/Anastasia/Desktop/TestTask/postfile.json -F press=OK http
 
 ### Найти товар по параметру
 curl "http://localhost:5000/products/getProductsYear/2017"
-curl "http://localhost:5000/products/getProductsColor/white
+
+curl "http://localhost:5000/products/getProductsColor/white"
+
 curl "http://localhost:5000/products/getProductsCountry/China"
 
 ### Получить детали найденного товара
