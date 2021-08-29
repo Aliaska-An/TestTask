@@ -1,7 +1,9 @@
 # TestTask
 ## Необходимые шаги для инсталляции
 pip install flask
+
 pip install flask_pymongo
+
 pip install bson
 
 ## Команда для запуска сервиса
