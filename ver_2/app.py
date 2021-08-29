@@ -75,7 +75,7 @@ def getProducts_COUNTRY(country):
     return {"products": json.loads(json.dumps(docs_list, default=json_util.default))}
 
 
-# Получить товар по COUNTRY
+# Получить товар по COLOR
 @app.route('/products/getProductsColor/<color>', methods=['GET'])
 def getProducts_COLOR(color):
     docs_list = list(mongo.db.products.find({"parameters.color": color}, {"_id": 0, "name": 1}))
