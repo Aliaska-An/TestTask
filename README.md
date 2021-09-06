@@ -12,6 +12,8 @@ python app.py
 ### Создать товар
 curl -F upload=@/Users/Anastasia/Desktop/TestTask/postfile.json -F press=OK http://localhost:5000/products/addProduct
 
+curl -i -X POST -H "Content-Type:application/json" --data "{'name':'Test3','description':'This is Test','parameters':{'year':2021,'country':'Vietnam','color':'pink'}}" http://localhost:5000/products/addProduct
+
 ### Найти товар по параметру
 curl "http://localhost:5000/products/getProductsYear/2017"
 
